@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+  } 
+
+
+.iconNav{
+  color: white;
+  font-size: 1.5em;
+}
+a{
+    color: whitesmoke;
+}
+
+/*home*/
+.home .par{
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    //background-image: url("./assets/background.jpg");
+    background-image: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.home .par .text{
+    width: 42%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.home .par .workbtn{
+    font-size: 2em;
+    color: white;
+    border-width: 4px;
+}
+.home .par .nameSpan {
+    color: purple;
+}
+@media screen and (max-width: 992px) {
+    .home .text{
+        width: 42%;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .home .par{
+        background-image: url("./assets/tenor1.gif");
+    }
+
+    .home .nameSpan{
+        color: green;
+    }
+  }
+/*bio*/
+.bio{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.bio #photo{
+    border: 5px solid #555;
+    background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bio .contentRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.bio .contentCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bio .firstText{
+    margin-top: 1em;
+    width: 40%;
+}
+
+.bio .secondText{
+    margin-top: 1em;
+}
+
+.bio .photoText{
+    width: 40%;
+}
+
+.bio .probar{
+    margin-top: 1em;
+    height: 1.5em;
+}
+
+/*work*/
+.work{
+    width: 100%; 
+    position: relative;
+    min-height: 100vh;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: lightgrey;
+}
+
+/*contact*/
+.contact{
+    width: 100%; 
+    position: relative;
+    min-height: 100vh;
+}
+
+.block0{
+    min-height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block1{
+    min-height: 20vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.iconNav{
+    font-size: 3em;
+    color: white;
+
+}
