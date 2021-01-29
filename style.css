@@ -57,6 +57,24 @@ a{
     }
   }
 /*bio*/
+@keyframes photoFrame {
+  from {margin-right: 10em;}
+  to {margin-right: 1em;}
+}
+
+@keyframes barFrame {
+  from {width: 10%}
+  to {width: 90%}
+}
+
+.bio .about{
+    color: black; 
+    font-size: 3em; 
+    text-decoration: underline;  
+    display: block; 
+    text-align: center;
+}
+
 .bio{
     width: 100%;
     min-height: 100vh;
@@ -96,6 +114,9 @@ a{
 
 .bio .photoText{
     width: 40%;
+    margin-right: 1em;
+    animation-name: photoFrame;
+    animation-duration: 1S;
 }
 
 .bio .probar{
@@ -103,6 +124,11 @@ a{
     height: 1.5em;
 }
 
+.bio .singlebar{
+    width: 90%;
+    animation-name: barFrame;
+    animation-duration: 1S;
+}
 /*work*/
 .work{
     width: 100%; 
