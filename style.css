@@ -42,17 +42,17 @@ a{
     color: purple;
 }
 @media screen and (max-width: 992px) {
-    .home .text{
+    .home .par .text{
         width: 42%;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     .home .par{
         background-image: url("./assets/tenor1.gif");
     }
 
-    .home .nameSpan{
+    .home .par .nameSpan{
         color: green;
     }
   }
@@ -110,6 +110,7 @@ a{
 
 .bio .secondText{
     margin-top: 1em;
+    text-align: center;
 }
 
 .bio .photoText{
@@ -129,17 +130,62 @@ a{
     animation-name: barFrame;
     animation-duration: 1S;
 }
+
+@media screen and (max-width: 992px) {
+    .bio .contentRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .bio .firstText{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 90%;
+    }
+    .bio .photoText{
+        width: 90%;
+        margin-right: 1em;
+        animation-name: photoFrame;
+        animation-duration: 1S;
+    }
+  }
+
 /*work*/
 .work{
     width: 100%; 
     position: relative;
     min-height: 100vh;
-    display: flex;;
+    background-color: lightgrey;
+}
+
+.work .cards{
+    margin-top: 5em;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: lightgrey;
 }
+
+.work .workLabel{
+    color: black; 
+    font-size: 3em; 
+    text-decoration: underline;  
+    display: block; 
+    text-align: center;
+}
+@media screen and (max-width: 992px) {
+    .work .cards{
+        margin-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 
 /*contact*/
 .contact{
@@ -148,7 +194,7 @@ a{
     min-height: 100vh;
 }
 
-.block0{
+.contact .block0{
     min-height: 80vh;
     background-color: white;
     display: flex;
@@ -157,7 +203,7 @@ a{
     flex-direction: column;
 }
 
-.block1{
+.contact .block1{
     min-height: 20vh;
     background-color: grey;
     display: flex;
@@ -166,15 +212,26 @@ a{
     flex-direction: column;
 }
 
-.flexRow{
+.contact .flexRow{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.iconNav{
+.contact .iconCon{
     font-size: 3em;
     color: white;
-
 }
+
+.contact .contactForm{
+    width: 40%; 
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 992px) {
+    .contact .contactForm{
+        width: 85%; 
+        margin-top: 1em;
+    }
+  }

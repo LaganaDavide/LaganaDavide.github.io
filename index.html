@@ -27,12 +27,12 @@
 <div onclick="myScroll('bio')" class="home" id="home">
     <div class="par">
         <div class="text">
-            Hello! I'm <span class="nameSpan"> Davide Laganà</span>.
+            Hi! I'm <span class="nameSpan"> Davide Laganà</span>.
         </div>
         <div class="text">
             I'm a software developer.
         </div>
-        <button type="button" class="btn btn-outline-dark workbtn">View my work</button>
+        <button type="button" class="btn btn-outline-dark workbtn">View my bio</button>
     </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -66,7 +66,7 @@
 	<div class="about" >ABOUT</div>    
         <div class=" contentRow" style="margin-top: 2em;">
           <div class="contentCol photoText">
-              <img src="./assets/DSC_0076.JPG"  width="250" height="210" id="photo" >
+              <img src="./assets/DSC_0076.JPG"  width="298.76" height="200" id="photo" >
               <div class="secondText">
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu pellentesque mauris. Cras sagittis eros ut ultrices tincidunt. Vestibulum fringilla, lorem a mattis sollicitudin, sem erat commodo ex, vel vehicula lorem lectus at nisi. Nullam libero nibh, auctor sit amet eros in, congue volutpat dui. Etiam hendrerit tortor leo, id rutrum elit bibendum quis. In dolor lorem, commodo in lorem eget, iaculis auctor arcu. Donec scelerisque fermentum augue.Integer fermentum, odio nec aliquam euismod, lorem dolor lobortis magna, aliquet suscipit ligula augue eu risus.
               </div>
@@ -84,57 +84,68 @@
             <div class="progress probar">
                 <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Angular</div>
             </div>
+            <div class="progress probar">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Java</div>
+            </div>
+            <div class="progress probar">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Python</div>
+            </div>
         </div>
     </div>
 </div>
 
 <!--work-->
 <div class="work" id="work" >
+	<div style="display: block; height: 4em; "></div>
+	<div class="workLabel" >WORK</div> 
+	<div class="cards">
+	    <div class="card" style="width: 18rem">
+	        <img src="./assets/library.jpg" class="card-img-top" alt="...">
+	        <div class="card-body">
+	        <h5 class="card-title">Education</h5>
+	        <p class="card-text">My education and training</p>
+	        <a data-toggle="modal" data-target="#eduModal" class="btn btn-primary">Open</a>
+	        </div>
+	    </div>
 
-    <div class="card" style="width: 18rem">
-        <img src="./assets/background.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Education</h5>
-        <p class="card-text">My education and training</p>
-        <a data-toggle="modal" data-target="#eduModal" class="btn btn-primary">Open</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
+	    <div class="card" style="width: 18rem;">
+	    	<img src="./assets/tenor.gif" class="card-img-top" alt="...">
+	        <div class="card-body">
+	        <h5 class="card-title">Experience</h5>
+	        <p class="card-text">My work experience</p>
+	        <a data-toggle="modal" data-target="#workModal" class="btn btn-primary">Open</a>
+	        </div>
+	    </div>
+	</div>   
 </div>
 
 <!--contact-->
 <div class="contact" id="contact">
-<div class="block0">
-    <div style="color: black; font-size: 3em; text-decoration: underline;">CONTACT</div>
-    <div >Have a question or want to work together?</div>
-    <form style="width: 40%; margin-top: 1em;">
-        <div class="form-group row">
-              <input type="text" class="form-control" id="name" placeholder="Name">
-        </div>
-        <div class="form-group row">
-            <input type="text" class="form-control" id="email" placeholder="Enter Email">
-        </div>
-        <div class="form-group row">
-            <textarea class="form-control" id="textarea" rows="4" placeholder="Your message"></textarea>
-        </div>
-        <div class="form-group row " style="float: right;">
-            <button type="button" class="btn btn-secondary">Submit</button>
-        </div>
-      </form>
-</div>
-<div class="block1">
-    <div class="flexRow">
-        <i class="fa fa-linkedin px-2 iconNav" href='https://www.linkedin.com/in/davide-lagan%C3%A0-16789814a/'></i>
-        <i class="fa fa-github  iconNav" href='https://github.com/LaganaDavide'></i>
-    </div>
-    <div style="margin-top: 1em;"> Davide Laganà @2020</div>
+	<div class="block0">
+		<div style="display: block; height: 4em; "></div>
+	    <div style="color: black; font-size: 3em; text-decoration: underline;">CONTACT</div>
+	    <div >Have a question or want to work together?</div>
+	    <form class="contactForm">
+	        <div class="form-group row">
+	              <input type="text" class="form-control" id="name" placeholder="Name">
+	        </div>
+	        <div class="form-group row">
+	            <input type="text" class="form-control" id="email" placeholder="Enter Email">
+	        </div>
+	        <div class="form-group row">
+	            <textarea class="form-control" id="textarea" rows="4" placeholder="Your message"></textarea>
+	        </div>
+	        <div class="form-group row " style="float: right;">
+	            <button type="button" class="btn btn-secondary">Submit</button>
+	        </div>
+	      </form>
+	</div>
+	<div class="block1">
+	    <div class="flexRow">
+	    	<a href="https://www.linkedin.com/in/davide-lagan%C3%A0-16789814a/"><i class="fa fa-linkedin px-2 iconCon" ></i></a>
+	  		<a href="https://github.com/LaganaDavide"><i class="fa fa-github  iconCon"></i></a>
+	    </div>
+	    <div style="margin-top: 1em;"> Davide Laganà @2020</div>
     </div>
 </div>
 
@@ -147,6 +158,24 @@
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">My Education</h4>
+        </div>
+        <div class="modal-body">
+          <p>Bachelor's Degree in Computer Science - Università di Pisa</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="modal fade" id="workModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">My Work Experience</h4>
         </div>
         <div class="modal-body">
           <p>Bachelor's Degree in Computer Science - Università di Pisa</p>
