@@ -83,9 +83,10 @@ a{
 }
 
 .bio #photo{
-    border: 5px solid #555;
+    border: 1px solid #555;
     background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border-radius: 50px;
 }
 
 .bio .contentRow{
@@ -101,6 +102,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+        min-height: 70vh;
 }
 
 .bio .firstText{
@@ -111,6 +113,7 @@ a{
 .bio .secondText{
     margin-top: 1em;
     text-align: center;
+    width: 90%;
 }
 
 .bio .photoText{
