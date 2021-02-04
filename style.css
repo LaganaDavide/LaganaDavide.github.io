@@ -20,8 +20,9 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    //background-image: url("./assets/background.jpg");
-    background-image: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");
+    /*background-image: url("./assets/background.jpg");*/
+    background-image: url("https://i.gifer.com/95W4.gif");
+    /*background-image: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");*/
     background-repeat: repeat-y;
     background-size: 100%;
 }
@@ -67,27 +68,22 @@ a{
   to {width: 90%}
 }
 
+
+.bio{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
 .bio .about{
     color: black; 
     font-size: 3em; 
     text-decoration: underline;  
     display: block; 
     text-align: center;
-}
-
-.bio{
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
 
 }
 
-.bio #photo{
-    border: 1px solid #555;
-    background-color: white;
-
-  border-radius: 50px;
-}
 
 .bio .contentRow{
     display: flex;

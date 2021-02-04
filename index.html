@@ -17,7 +17,8 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 	<!--font-awesome-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<script src="https://kit.fontawesome.com/9c3b6ec21f.js" crossorigin="anonymous"></script>
 	<!--my script and css-->
 	 <script src="script.js"></script> 
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -32,7 +33,7 @@
         <div class="text">
             I'm a software developer.
         </div>
-        <button type="button" class="btn btn-outline-dark workbtn">View my bio</button>
+        <button type="button" class="btn btn-outline-dark workbtn">View my Bio</button>
     </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -64,11 +65,15 @@
 <div class="bio" id="bio">
 	<div style="display: block; height: 4em; "></div>
 	<div class="about" >ABOUT</div>    
-        <div class=" contentRow" style="margin-top: 2em;">
+        <div class="contentRow" >
           <div class="contentCol photoText">
-              <img src="./assets/DSC_0076.JPG"  width="298.76" height="200" id="photo" >
+              <img src="./assets/DSC_0076.JPG"  width="298.76" height="200" id="photo" class="border border-primary rounded">
               <div class="secondText">
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu pellentesque mauris. Cras sagittis eros ut ultrices tincidunt. Vestibulum fringilla, lorem a mattis sollicitudin, sem erat commodo ex, vel vehicula lorem lectus at nisi. Nullam libero nibh, auctor sit amet eros in, congue volutpat dui. Etiam hendrerit tortor leo, id rutrum elit bibendum quis. In dolor lorem, commodo in lorem eget, iaculis auctor arcu. Donec scelerisque fermentum augue.Integer fermentum, odio nec aliquam euismod, lorem dolor lobortis magna, aliquet suscipit ligula augue eu risus.
+                   Graduated in computer science at the University of Pisa.
+					I specialized in web applications.</br>
+					I know the structure of a basic web page well (HTML, CSS, Javascript) and I have experience with various frameworks and libraries (Angular, Bootstrap ..).</br>
+					I carried out on my own the study of Java and the Spring framework.</br>
+					Lately I've been appasionate on Data Sciences and Machine Learning in Python.
               </div>
           </div>
           <div class="firstText">
@@ -90,6 +95,12 @@
             <div class="progress probar">
                 <div class="progress-bar " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Python</div>
             </div>
+            <div style="display: block;  text-align: center; font-size: 6em; " class="text-primary"  >
+				<i class="fa fa-html5  "></i>
+				<i class="fab fa-css3-alt"></i>
+				<i class="fab fa-js "></i>
+				<i class="fab fa-angular  "></i>
+		</div>
         </div>
     </div>
 </div>
@@ -125,7 +136,7 @@
 		<div style="display: block; height: 4em; "></div>
 	    <div style="color: black; font-size: 3em; text-decoration: underline;">CONTACT</div>
 	    <div >Have a question or want to work together?</div>
-	    <form class="contactForm">
+	    <form class="contactForm" id="myForm">
 	        <div class="form-group row">
 	              <input type="text" class="form-control" id="name" placeholder="Name">
 	        </div>
@@ -133,12 +144,12 @@
 	            <input type="text" class="form-control" id="email" placeholder="Enter Email">
 	        </div>
 	        <div class="form-group row">
-	            <textarea class="form-control" id="textarea" rows="4" placeholder="Your message"></textarea>
+	            <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
 	        </div>
 	        <div class="form-group row " style="float: right;">
-	            <button type="button" class="btn btn-secondary">Submit</button>
+	            <button id="send" class="btn btn-secondary" >Send</button>
 	        </div>
-	      </form>
+        </form>
 	</div>
 	<div class="block1">
 	    <div class="flexRow">
