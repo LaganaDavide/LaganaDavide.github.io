@@ -21,7 +21,7 @@ a{
     align-items: center;
     flex-direction: column;
     /*background-image: url("./assets/background.jpg");*/
-    background-image: url("https://i.gifer.com/95W4.gif");
+    background-image: url("https://media.giphy.com/media/3oz8xYPjj369k1PJcI/giphy.gif");
     /*background-image: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");*/
     background-repeat: repeat-y;
     background-size: 100%;
@@ -73,11 +73,12 @@ a{
     width: 100%;
     min-height: 100vh;
     position: relative;
+    background: black
 }
 
 .bio .about{
     color: black; 
-    font-size: 3em; 
+    font-size: 2.5em; 
     text-decoration: underline;  
     display: block; 
     text-align: center;
@@ -98,7 +99,8 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-        min-height: 70vh;
+    min-height: 70vh;
+
 }
 
 .bio .firstText{
@@ -113,10 +115,11 @@ a{
 }
 
 .bio .photoText{
-    width: 40%;
+    width: 35%;
     margin-right: 1em;
     animation-name: photoFrame;
     animation-duration: 1S;
+    color: white;
 }
 
 .bio .probar{
@@ -160,7 +163,7 @@ a{
 }
 
 .work .cards{
-    margin-top: 5em;
+    margin-top: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,11 +172,22 @@ a{
 
 .work .workLabel{
     color: black; 
-    font-size: 3em; 
+    font-size: 2.5em; 
     text-decoration: underline;  
     display: block; 
     text-align: center;
 }
+
+.work .cardBlur {
+    filter: blur(8px);
+    -webkit-filter: blur(8px); 
+}
+
+.work .cardText{
+    filter: blur(0px);
+    -webkit-filter: blur(0px); 
+}
+
 @media screen and (max-width: 992px) {
     .work .cards{
         margin-top: 2em;

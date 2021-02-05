@@ -31,4 +31,15 @@ $(document).ready(function() {
 	    	alert("insert first")
 	    }
 	});
+
+	$('.card').mouseenter(function (){
+		$(this).find(".card-img").addClass("cardBlur");
+		$(this).find(".card-img-overlay").css("display", "block");
+
+	});
+
+	$('.card').mouseleave(function (){
+		$(this).find(".card-img").removeClass("cardBlur");
+		$(this).find(".card-img-overlay").css("display", "none");
+	})
 });

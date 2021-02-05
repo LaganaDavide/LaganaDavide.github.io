@@ -67,12 +67,11 @@
 	<div class="about" >ABOUT</div>    
         <div class="contentRow" >
           <div class="contentCol photoText">
-              <img src="./assets/DSC_0076.JPG"  width="298.76" height="200" id="photo" class="border border-primary rounded">
+              <img src="./assets/DSC_0076.JPG"  height="150" id="photo" class="border border-primary rounded">
               <div class="secondText">
-                   Graduated in computer science at the University of Pisa.
+                   Graduated in Computer Science at the <span style="color: green">University of Pisa</span>.
 					I specialized in web applications.</br>
-					I know the structure of a basic web page well (HTML, CSS, Javascript) and I have experience with various frameworks and libraries (Angular, Bootstrap ..).</br>
-					I carried out on my own the study of Java and the Spring framework.</br>
+					I'm am an enthusiastic user of Linux and open-source software</br>
 					Lately I've been appasionate on Data Sciences and Machine Learning in Python.
               </div>
           </div>
@@ -110,21 +109,19 @@
 	<div style="display: block; height: 4em; "></div>
 	<div class="workLabel" >WORK</div> 
 	<div class="cards">
-	    <div class="card" style="width: 18rem">
-	        <img src="./assets/library.jpg" class="card-img-top" alt="...">
-	        <div class="card-body">
-	        <h5 class="card-title">Education</h5>
-	        <p class="card-text">My education and training</p>
-	        <a data-toggle="modal" data-target="#eduModal" class="btn btn-primary">Open</a>
+	    <div data-toggle="modal" data-target="#eduModal" class="card" style="width: 25rem; ">
+	        <img src="./assets/library.jpg" class="card-img" style="height: 25rem;">
+	        <div class="card-img-overlay" style="display: none">
+	        <h5 class="card-title" style="color: white; text-align: center; margin-top: 40%;">Education</h5>
+	        <p class="card-text" style="color: white; text-align: center;">My education and training</p>
 	        </div>
 	    </div>
 
-	    <div class="card" style="width: 18rem;">
-	    	<img src="./assets/tenor.gif" class="card-img-top" alt="...">
-	        <div class="card-body">
-	        <h5 class="card-title">Experience</h5>
-	        <p class="card-text">My work experience</p>
-	        <a data-toggle="modal" data-target="#workModal" class="btn btn-primary">Open</a>
+	    <div data-toggle="modal" data-target="#workModal"  class="card" style="width: 25rem;">
+	    	<img src="./assets/tenor.gif" class="card-img" style="height: 25rem;">
+	        <div class="card-img-overlay " style="display: none">
+	        		<h5 class="card-title " style="color: white; text-align: center;margin-top: 40%;">Experience</h5>
+	        		<p class="card-text " style="color: white; text-align: center;">My work experience</p>
 	        </div>
 	    </div>
 	</div>   
@@ -162,8 +159,8 @@
 
 
   <!-- Modal education-->
-  <div class="modal fade" id="eduModal" role="dialog">
-    <div class="modal-dialog modal-lg">
+  <div class="modal fade " id="eduModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
     
       <!-- Modal content-->
       <div class="modal-content">
@@ -184,16 +181,19 @@
       
     </div>
   </div>
-  <div class="modal fade" id="workModal" role="dialog">
-    <div class="modal-dialog modal-lg">
+  <div class="modal fade  " id="workModal" role="dialog">
+    <div class="modal-dialog  modal-dialog-centered modal-lg ">
     
       <!-- Modal content-->
-      <div class="modal-content">
+      <div class="modal-content ">
         <div class="modal-header">
-          <h4 class="modal-title">My Work Experience</h4>
+          <h4 class="modal-title" >My Work Experience</h4>
         </div>
         <div class="modal-body">
-          <p>Bachelor's Degree in Computer Science - Università di Pisa</p>
+  			<p>	I specialized in web applications.</br>
+			I know the structure of a basic web page well (HTML, CSS, Javascript) and I have experience with various frameworks and libraries (Angular, Bootstrap ..).</br>
+			I carried out on my own the study of Java and the Spring framework.</br>
+			Lately I've been appasionate on Data Sciences and Machine Learning in Python.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
