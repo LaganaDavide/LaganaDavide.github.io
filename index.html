@@ -108,19 +108,19 @@
 <div class="work" id="work" >
 	<div style="display: block; height: 4em; "></div>
 	<div class="workLabel" >WORK</div> 
-	<div class="cards">
-	    <div data-toggle="modal" data-target="#eduModal" class="card" style="width: 25rem; ">
-	        <img src="./assets/library.jpg" class="card-img" style="height: 25rem;">
-	        <div class="card-img-overlay" style="display: none">
-	        <h5 class="card-title" style="color: white; text-align: center; margin-top: 40%;">Education</h5>
+	<div class="cards card-deck ">
+	    <div data-toggle="modal" data-target="#eduModal" class="card" >
+	        <img src="./assets/library.jpg" class="card-img" >
+	        <div class="card-img-overlay cardText" >
+	        <h5 class="card-title" style="color: white; text-align: center;">Education</h5>
 	        <p class="card-text" style="color: white; text-align: center;">My education and training</p>
 	        </div>
 	    </div>
 
-	    <div data-toggle="modal" data-target="#workModal"  class="card" style="width: 25rem;">
-	    	<img src="./assets/tenor.gif" class="card-img" style="height: 25rem;">
-	        <div class="card-img-overlay " style="display: none">
-	        		<h5 class="card-title " style="color: white; text-align: center;margin-top: 40%;">Experience</h5>
+	    <div data-toggle="modal" data-target="#workModal"  class="card" >
+	    	<img src="./assets/tenor.gif" class="card-img" >
+	        <div class="card-img-overlay cardText" >
+	        		<h5 class="card-title " style="color: white; text-align: center;">Experience</h5>
 	        		<p class="card-text " style="color: white; text-align: center;">My work experience</p>
 	        </div>
 	    </div>
@@ -163,40 +163,40 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
     
       <!-- Modal content-->
-      <div class="modal-content">
+      <div class="modal-content" style="background: black; color: white">
         <div class="modal-header">
-          <h4 class="modal-title">My Education</h4>
+          <h4 class="modal-title" style="margin: 0 auto" >My Education</h4>
         </div>
         <div class="modal-body">
-          <p>
+          <p style="text-align: center;">
           	Bachelor's Degree in Computer Science - Università di Pisa.</br>
           	Technical high school- Diploma in accounting, business and programmer.</br>
           	Front-End Developer Course at IFOA (Florence).
           </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
         </div>
       </div>
       
     </div>
   </div>
   <div class="modal fade  " id="workModal" role="dialog">
-    <div class="modal-dialog  modal-dialog-centered modal-lg ">
+    <div class="modal-dialog  modal-dialog-centered modal-lg " >
     
       <!-- Modal content-->
-      <div class="modal-content ">
+      <div class="modal-content " style="background: black; color: white">
         <div class="modal-header">
-          <h4 class="modal-title" >My Work Experience</h4>
+          <h4 class="modal-title" style="margin: 0 auto" >My Work Experience</h4>
         </div>
         <div class="modal-body">
-  			<p>	I specialized in web applications.</br>
+  			<p style="text-align: center;">	I specialized in web applications.</br>
 			I know the structure of a basic web page well (HTML, CSS, Javascript) and I have experience with various frameworks and libraries (Angular, Bootstrap ..).</br>
 			I carried out on my own the study of Java and the Spring framework.</br>
 			Lately I've been appasionate on Data Sciences and Machine Learning in Python.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
         </div>
       </div>
       

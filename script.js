@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 	$('.card').mouseenter(function (){
 		$(this).find(".card-img").addClass("cardBlur");
-		$(this).find(".card-img-overlay").css("display", "block");
+		$(this).find(".card-img-overlay").css("display", "flex");
 
 	});
 
