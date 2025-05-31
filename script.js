@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       e.preventDefault();
       
-      // For now, just log the navigation since sections aren't set up with IDs
       console.log('Navigating to:', this.textContent);
 
       const targetId = this.getAttribute('href').substring(1);
@@ -24,12 +23,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Projects button click handler
   const projectsBtn = document.querySelector('.projects-btn');
   if (projectsBtn) {
     projectsBtn.addEventListener('click', function() {
-      console.log('Projects button clicked');
-      // Could navigate to projects section or page
+      const terminalWork = document.querySelector('.terminal-work');
+      if (terminalWork) {
+        const profileImg = terminalWork.querySelector('.terminal-profile-img');
+        const isVisible = terminalWork.style.display === 'block';
+        if (isVisible) {
+          terminalWork.style.display = 'none';
+          if (profileImg) profileImg.style.display = 'none';
+        } else {
+          terminalWork.style.display = 'block';
+          if (profileImg) profileImg.style.display = 'block';
+          terminalWork.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
     });
   }
   
@@ -87,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.add('dark');
       // Log which skill was clicked and its state
       const skillTitle = this.querySelector('h3').textContent;
-      console.log(`${skillTitle} is highlighted`);
     });
   });
   
@@ -103,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const company = spans.length > 1 ? spans[1].textContent : 'Unknown';
       
       const isHighlighted = this.classList.contains('highlight');
-      console.log(`${company} is ${isHighlighted ? 'highlighted' : 'unhighlighted'}`);
     });
   });
   
