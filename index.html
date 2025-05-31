@@ -1,207 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Davide Laganà</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-	<!--font-awesome-->
-	<!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-	<script src="https://kit.fontawesome.com/9c3b6ec21f.js" crossorigin="anonymous"></script>
-	<!--my script and css-->
-	 <script src="script.js"></script> 
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davide Laganà Full-stack Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<!--Home-->
-<div onclick="myScroll('bio')" class="home" id="home">
-    <div class="par">
-        <div class="text">
-            Hi! I'm <span class="nameSpan"> Davide Laganà</span>.
+  <a id="top"></a>
+  <header>
+    <div class="logo">Davide Laganà</div>
+    <nav>
+      <a href="#top">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work / Education / Certification</a>
+      <a href="#">Contacts</a>
+    </nav>
+    <div class="lang">En | It</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-title-row">
+      <div class="hero-title">
+        <h1>Full-stack <span>Developer</span></h1>
+      </div>
         </div>
-        <div class="text">
-            I'm a software developer.
-        </div>
-        <button type="button" class="btn btn-outline-dark workbtn">View my Bio</button>
+        <p>My goal is to <em>write maintainable, clean</em>, and <em>understandable code</em> to make the development process enjoyable.</p>
+            <button class="projects-btn">Profile →</button>
+    <div class="socials">
+      <a href="https://github.com/LaganaDavide" target="_blank" rel="noopener" class="social-github">
+        <button type="button">Github</button>
+      </a>
+      <a href="https://www.linkedin.com/in/davide-lagan%C3%A0-16789814a/?locale=en_US" target="_blank" rel="noopener" class="social-linkedin">
+        <button type="button">LinkedIn</button>
+      </a>
     </div>
-</div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <a class="navbar-brand" href="#">Davide<strong>Laganà</strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse  " id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item ">
-        <a class="nav-link active" onclick="myScroll('home')"  routerLinkActive="active">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" onclick="myScroll('bio')"  routerLinkActive="active">Bio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" onclick="myScroll('work')" routerLinkActive="active">Work</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" onclick="myScroll('contact')" routerLinkActive="active">Contact</a>
-      </li>
-    </ul>
-  </div>
-  <a href="https://www.linkedin.com/in/davide-lagan%C3%A0-16789814a/"><i class="fa fa-linkedin ml-auto px-1 iconNav"></i></a>
-  <a href="https://github.com/LaganaDavide"><i class="fa fa-github ml-auto px-1 iconNav"></i></a>
-</nav> 
+  </section>
 
-<!--bio-->    
-<div class="bio" id="bio">
-	<div style="display: block; height: 4em; "></div>
-	<div class="about" >ABOUT</div>    
-        <div class="contentCol" >
-          <div class="contentRow photoText">
-              <div class="secondText">
-                   Graduated in Computer Science at the <span style="color: green">University of Pisa</span>.
-					I specialized in web applications.</br>
-					I'm am an enthusiastic user of Linux and open-source software</br>
-					Lately I've been appasionate on Data Sciences and Machine Learning in Python.
-              </div>
-              <img src="./assets/DSC_0076.JPG"  height="150" id="photo" class="border border-primary rounded">
-          </div>
-          <div class="firstText">
-            <div class="progress probar">
-                <div class="progress-bar barFrame" role="progressbar" style="width: 90% " aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML</div>
-            </div>
-            <div class="progress probar">
-                <div class="progress-bar " role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">CSS</div>
-            </div>
-            <div class="progress probar">
-                <div class="progress-bar " role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Javascript</div>
-            </div>
-            <div class="progress probar">
-                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Angular</div>
-            </div>
-            <div class="progress probar">
-                <div class="progress-bar " role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">C#</div>
-            </div>
-            <div class="progress probar">
-                <div class="progress-bar " role="progressbar" style="width: 40%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Python</div>
-            </div>
-            <div style="display: block;  text-align: center; font-size: 6em; " class="text-primary"  >
-				<i class="fa fa-html5  "></i>
-				<i class="fab fa-css3-alt"></i>
-				<i class="fab fa-js "></i>
-				<i class="fab fa-angular  "></i>
-			</div>
-        </div>
+  <section class="skills" id="skills">
+            <p>Hello! I'm Davide, I'm a <strong>full-stack developer</strong>.<br>More than <strong>5 years</strong> experience.</p>
+
+    <div class="skills-levels">
+      <button class="skills-level-btn active" data-level="senior">Senior</button>
+      <button class="skills-level-btn" data-level="junior">Junior</button>
+      <button class="skills-level-btn" data-level="basic">Basic</button>
     </div>
-</div>
-
-<!--work-->
-<div class="work" id="work" >
-	<div style="display: block; height: 4em; "></div>
-	<div class="workLabel" >WORK</div> 
-	<div class="cards card-deck ">
-	    <div data-toggle="modal" data-target="#eduModal" class="card" >
-	        <img src="./assets/library.jpg" class="card-img" >
-	        <div class="card-img-overlay cardText" >
-	        <h5 class="card-title" style="color: white; text-align: center;">Education</h5>
-	        <p class="card-text" style="color: white; text-align: center;">My education and training</p>
-	        </div>
-	    </div>
-
-	    <div data-toggle="modal" data-target="#workModal"  class="card" >
-	    	<img src="./assets/tenor.gif" class="card-img" >
-	        <div class="card-img-overlay cardText" >
-	        		<h5 class="card-title " style="color: white; text-align: center;">Experience</h5>
-	        		<p class="card-text " style="color: white; text-align: center;">My work experience</p>
-	        </div>
-	    </div>
-	</div>   
-</div>
-
-<!--contact-->
-<div class="contact" id="contact">
-	<div class="block0">
-		<div style="display: block; height: 4em; "></div>
-	    <div style="color: black; font-size: 3em; text-decoration: underline;">CONTACT</div>
-	    <div >Have a question or want to work together?</div>
-	    <form class="contactForm" id="myForm">
-	        <div class="form-group row">
-	              <input type="text" class="form-control" id="name" placeholder="Name">
-	        </div>
-	        <div class="form-group row">
-	            <input type="text" class="form-control" id="email" placeholder="Enter Email">
-	        </div>
-	        <div class="form-group row">
-	            <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
-	        </div>
-	        <div class="form-group row " style="float: right;">
-	            <button id="send" class="btn btn-secondary" >Send</button>
-	        </div>
-        </form>
-	</div>
-	<div class="block1">
-	    <div class="flexRow">
-	    	<a href="https://www.linkedin.com/in/davide-lagan%C3%A0-16789814a/"><i class="fa fa-linkedin px-2 iconCon" ></i></a>
-	  		<a href="https://github.com/LaganaDavide"><i class="fa fa-github  iconCon"></i></a>
-	    </div>
-	    <div style="margin-top: 1em;"> Davide Laganà @2020</div>
-    </div>
-</div>
-
-
-  <!-- Modal education-->
-  <div class="modal fade " id="eduModal" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="background: black; color: white">
-        <div class="modal-header">
-          <h4 class="modal-title" style="margin: 0 auto" >My Education</h4>
+    <div class="skills-rows">
+      <div class="skills-row" data-level="senior">
+        <div class="skill-box ">
+          <h3>Languages</h3>
+          <p>C# / Typescript / SQL</p>
         </div>
-        <div class="modal-body">
-          <p style="text-align: center;">
-          	Bachelor's Degree in Computer Science - Università di Pisa.</br>
-          	Technical high school- Diploma in accounting, business and programmer.</br>
-          	Front-End Developer Course at IFOA (Florence).
-          </p>
+        <div class="skill-box ">
+          <h3>Framework</h3>
+          <p>Angular / .Net</p>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <div class="skill-box ">
+          <h3>Tools</h3>
+          <p>Azure / Git / Copilot / Visual Studio / Visual Studio Code / Microsoft SQL Server</p>
         </div>
       </div>
-      
-    </div>
-  </div>
-  <div class="modal fade  " id="workModal" role="dialog">
-    <div class="modal-dialog  modal-dialog-centered modal-lg " >
-    
-      <!-- Modal content-->
-      <div class="modal-content " style="background: black; color: white">
-        <div class="modal-header">
-          <h4 class="modal-title" style="margin: 0 auto" >My Work Experience</h4>
+      <div class="skills-row" data-level="junior" style="display:none;">
+        <div class="skill-box ">
+          <h3>Languages</h3>
+          <p>Python</p>
         </div>
-        <div class="modal-body">
-  			<p style="text-align: center;">	I specialized in web applications.</br>
-			I know the structure of a basic web page well (HTML, CSS, Javascript) and I have experience with various frameworks and libraries (Angular, Bootstrap ..).</br>
-			I carried out on my own the study of Java and the Spring framework.</br>
-			Lately I've been appasionate on Data Sciences and Machine Learning in Python.</p>
+        <div class="skill-box ">
+          <h3>Library</h3>
+          <p>Matplotlib / Numpy</p>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <div class="skill-box ">
+          <h3>Tools</h3>
+          <p>Jupiter</p>
         </div>
       </div>
-      
+      <div class="skills-row" data-level="basic" style="display:none;">
+        <div class="skill-box ">
+          <h3>Languages</h3>
+          <p>Java / PHP</p>
+        </div>
+        <div class="skill-box ">
+          <h3>Library</h3>
+          <p>PyTorch</p>
+        </div>
+        <div class="skill-box ">
+          <h3>Tools</h3>
+          <p>AWS </p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section class="work" id="work">
+    <h3>Work</h3>
+    <div class="work-item">
+      <span>NTT DATA ITALIA</span><span>Software Engineer</span>
+    </div>
+
+    <div class="education-subsection">
+      <h3>Certification</h3>
+      <div class="work-item">
+        <span>Certified Azure Developer AZ-900</span><span>Microsoft</span>
+      </div>
+    </div>
+
+     <div class="education-subsection">
+      <h3>Education</h3>
+      <div class="work-item">
+        <span>University of Pisa</span><span>BSc Computer Science</span>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
-

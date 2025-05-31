@@ -1,45 +1,129 @@
-var myScroll = function(str){
-	let el = document.getElementById(str);
-    el.scrollIntoView();
-}
+document.addEventListener('DOMContentLoaded', function() {
+  // Smooth scrolling for navigation links
+  const navLinks = document.querySelectorAll('nav a');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+        return;
+      }
+      e.preventDefault();
+      
+      // For now, just log the navigation since sections aren't set up with IDs
+      console.log('Navigating to:', this.textContent);
 
-$(document).ready(function() {
-	$('#send').click( function(event) {
-		event.preventDefault(); // prevent reload
-	    console.log("ok");
-	    if ( $('#name').val() != "" , $('#email').val() != "", $('#message').val() != ""){
-		    var data = {
-			    service_id: 'service_p56xbdb',
-			    template_id: 'template_cah7z8u',
-			    user_id: 'user_Qqe9zWvIkuFPyoGoqtU1G',
-			    template_params: {
-			        'name': $('#name').val(),
-			        'email': $('#email').val(),
-			        'message': $('#message').val()
-			    }
-			};
-			$.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-			    type: 'POST',
-			    data: JSON.stringify(data),
-			    contentType: 'application/json'
-			}).done(function() {
-			    alert('Your mail is sent!');
-			}).fail(function(error) {
-			    alert('Oops... ' + JSON.stringify(error));
-			});
-	    }else{
-	    	alert("insert first")
-	    }
-	});
-
-	$('.card').mouseenter(function (){
-		$(this).find(".card-img").addClass("cardBlur");
-		$(this).find(".card-img-overlay").css("display", "flex");
-
-	});
-
-	$('.card').mouseleave(function (){
-		$(this).find(".card-img").removeClass("cardBlur");
-		$(this).find(".card-img-overlay").css("display", "none");
-	})
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  
+  // Projects button click handler
+  const projectsBtn = document.querySelector('.projects-btn');
+  if (projectsBtn) {
+    projectsBtn.addEventListener('click', function() {
+      console.log('Projects button clicked');
+      // Could navigate to projects section or page
+    });
+  }
+  
+  // Language toggle
+  const langToggle = document.querySelector('.lang');
+  if (langToggle) {
+    langToggle.addEventListener('click', function() {
+      // Toggle between languages
+      const currentText = this.textContent;
+      if (currentText.includes('En | It')) {
+        this.textContent = 'It | En';
+        console.log('Switched to Italian');
+      } else {
+        this.textContent = 'En | It';
+        console.log('Switched to English');
+      }
+    });
+  }
+  
+  // Simple animation for hero section
+  const heroSection = document.querySelector('.hero');
+  if (heroSection) {
+    // Add a subtle fade-in effect
+    heroSection.style.opacity = '0';
+    heroSection.style.transition = 'opacity 1s ease-in-out';
+    
+    setTimeout(() => {
+      heroSection.style.opacity = '1';
+    }, 300);
+  }
+  
+  // Social media buttons
+  const socialButtons = document.querySelectorAll('.socials button');
+  socialButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Toggle highlight class
+      this.classList.toggle('highlight');
+      
+      const platform = this.textContent;
+      const isHighlighted = this.classList.contains('highlight');
+      console.log(`${platform} is ${isHighlighted ? 'highlighted' : 'unhighlighted'}`);
+      
+      // In a real implementation, we would redirect to the appropriate social media profile
+      // Example: window.open('https://github.com/username', '_blank');
+    });
+  });
+  
+  // Skill box highlighting
+  const skillBoxes = document.querySelectorAll('.skill-box');
+  skillBoxes.forEach(box => {
+    box.addEventListener('click', function() {
+      // Remove 'dark' class from all skill boxes
+      skillBoxes.forEach(b => b.classList.remove('dark'));
+      // Add 'dark' class only to the clicked skill box
+      this.classList.add('dark');
+      // Log which skill was clicked and its state
+      const skillTitle = this.querySelector('h3').textContent;
+      console.log(`${skillTitle} is highlighted`);
+    });
+  });
+  
+  // Work item highlighting
+  const workItems = document.querySelectorAll('.work-item');
+  workItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // Toggle highlight class
+      this.classList.toggle('highlight');
+      
+      // Get the company name (second span)
+      const spans = this.querySelectorAll('span');
+      const company = spans.length > 1 ? spans[1].textContent : 'Unknown';
+      
+      const isHighlighted = this.classList.contains('highlight');
+      console.log(`${company} is ${isHighlighted ? 'highlighted' : 'unhighlighted'}`);
+    });
+  });
+  
+  // Skills level switcher
+  const skillsLevelBtns = document.querySelectorAll('.skills-level-btn');
+  const skillsRows = document.querySelectorAll('.skills-row');
+  skillsLevelBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Set active button
+      skillsLevelBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      // Show the selected skills row
+      const level = this.getAttribute('data-level');
+      skillsRows.forEach(row => {
+        if (row.getAttribute('data-level') === level) {
+          row.style.display = 'block';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  });
 });
